@@ -7,15 +7,16 @@ bookTitleMarkup = \markup {
         \fill-line { 
           {\bold \underline \abs-fontsize #18 \fromproperty #'header:dedication } 
           {\bold \abs-fontsize #18 \fromproperty #'header:subtitle } 
-          } 
+                  } 
         }
-
+    
     \column { \null \fill-line {\bold \abs-fontsize #24 \fromproperty #'header:title } }
-
+    
     \column {
-	
+
       \column {
-	  \null
+    \null
+        \fill-line {\fromproperty #'header:subsubtitle }
         \fill-line {
                 { \italic \fromproperty #'header:poet } 
                 { \italic \fromproperty #'header:composer } 
@@ -25,16 +26,18 @@ bookTitleMarkup = \markup {
       }
     }
   }
-}
+
 \header {
 %tried in-line markup here
-%	title = \markup { \fontsize #4 \bold "Dead Mom"}
-	title = "Dead Mom"
-	dedication = "PIANO/VOCAL" 
-	composer = "Music & Lyrics by Eddie Perfect"
-	subtitle = "BEETLEJUICE"
+% title = \markup { \fontsize #4 \bold "Dead Mom"}
+  title = "Dead Mom"
+  dedication = "PIANO/VOCAL" 
+  composer = "Music & Lyrics by Eddie Perfect"
+  subtitle = "BEETLEJUICE"
+  subsubtitle= "#5"
   poet = "     "
 }
+
 
 melody = \relative c'' {
 %put measure numbers on every bar
