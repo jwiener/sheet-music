@@ -1,4 +1,13 @@
 \version "2.14.0"
+
+bookTitleMarkup = \markup { 
+  \column { 
+    \column { 
+      \line { \italic \fromproperty #'header:title } 
+      } 
+    } 
+  }
+
 \header {
   title = \markup { \fontsize #4 \bold "Dead Mom"}
   subtitle = "PIANO/VOCAL" 
