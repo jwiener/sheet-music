@@ -14,7 +14,7 @@ bookTitleMarkup = \markup {
       \null 
       \fill-line {
           {\bold \abs-fontsize #16 \fromproperty #'header:poetDates }
-          {\bold \abs-fontsize #16 \fromproperty #'header:subsubtitle }
+          {\box \bold \abs-fontsize #16 \fromproperty #'header:subsubtitle }
           
             }
       \fill-line {\bold \abs-fontsize #24 \fromproperty #'header:title } 
