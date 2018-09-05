@@ -27,7 +27,7 @@ bookTitleMarkup = \markup {
         \fill-line {
                 { \italic \fromproperty #'header:poet } 
                 { \italic \fromproperty #'header:composer } 
-                }
+              }
           }
         }
       }
