@@ -16,7 +16,7 @@ bookTitleMarkup = \markup {
 
       \column {
     \null
-        \fill-line {\fromproperty #'header:subsubtitle }
+        \fill-line {\bold \abs-fontsize #16 \fromproperty #'header:subsubtitle }
         \fill-line {
                 { \italic \fromproperty #'header:poet } 
                 { \italic \fromproperty #'header:composer } 
