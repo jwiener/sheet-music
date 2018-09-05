@@ -1,10 +1,29 @@
 \paper {
 bookTitleMarkup = \markup { 
- 	\column {
-		\column { \line { \bold \fromproperty #'header:dedication } } 
-		\column { \null \fill-line {\bold \fontsize #9 \fromproperty #'header:title } }
-		\column { \null \line { \italic \fromproperty #'header:composer } }
-		}		
+  \column {
+    
+    \column { 
+    \override #'(baseline-skip . 5)
+        \fill-line { 
+          {\bold \underline \abs-fontsize #18 \fromproperty #'header:dedication } 
+          {\bold \abs-fontsize #18 \fromproperty #'header:subtitle } 
+          } 
+        }
+
+    \column { \null \fill-line {\bold \abs-fontsize #24 \fromproperty #'header:title } }
+
+    \column {
+	
+      \column {
+	  \null
+        \fill-line {
+                { \italic \fromproperty #'header:poet } 
+                { \italic \fromproperty #'header:composer } 
+                }
+          }
+        }
+      }
+    }
   }
 }
 \header {
@@ -13,7 +32,8 @@ bookTitleMarkup = \markup {
 	title = "Dead Mom"
 	dedication = "PIANO/VOCAL" 
 	composer = "Music & Lyrics by Eddie Perfect"
-	subtitle = "#5"
+	subtitle = "BEETLEJUICE"
+  poet = "     "
 }
 
 melody = \relative c'' {
