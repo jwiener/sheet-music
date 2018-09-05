@@ -16,7 +16,11 @@ bookTitleMarkup = \markup {
 
       \column {
     \null
-        \fill-line {\bold \abs-fontsize #16 \fromproperty #'header:subsubtitle }
+        \fill-line {
+          {\bold \abs-fontsize #16 \fromproperty #'header:poetDates }
+          {\bold \abs-fontsize #16 \fromproperty #'header:subsubtitle }
+          
+            }
         \fill-line {
                 { \italic \fromproperty #'header:poet } 
                 { \italic \fromproperty #'header:composer } 
@@ -36,6 +40,7 @@ bookTitleMarkup = \markup {
   subtitle = "BEETLEJUICE"
   subsubtitle= "#5"
   poet = "     "
+  poetDates = "     "
 }
 
 
