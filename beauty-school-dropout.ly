@@ -1,9 +1,43 @@
+%{ 
+\book {
+  \paper {
+    indent = 0\mm
+    scoreTitleMarkup = \markup {
+      \fill-line {
+        \null
+        \override #`(direction . ,UP) {
+          \dir-column {
+            \center-align \fontsize #-1 \bold
+              \fromproperty #'header:mycustomtext %% User-defined field
+            \center-align \fontsize #4 \bold
+              \fromproperty #'header:piece
+          }
+        }
+        \fromproperty #'header:opus
+      }
+    }
+  }
+  \header { tagline = ##f }
+  \score {
+    { s1 }
+    \header {
+      piece = "FUGA I"
+      mycustomtext = "A 4 VOCI" %% User-defined field
+      opus = "BWV 846"
+    }
+  }
+}
+%}
+
+
 \version "2.14.0"
 
 \header {
-	title = "Dead Mom"
+  title = \markup { \fontsize #4 \bold "Dead Mom"}
+  subtitle = "PIANO/VOCAL" 
 	composer = "Music & Lyrics by Eddie Perfect"
-	subtitle = "#5"
+	%subtitle = "#5"
+
 }
 
 melody = \relative c'' {
@@ -15,7 +49,7 @@ melody = \relative c'' {
   \time 4/4
   \autoBeamOn
 
-  \tempo 4 = 120
+  \tempo "Earnest Teen Rock" 4 = 120
 
 %<<MUSIC START>>
   r1 |
@@ -78,6 +112,8 @@ upper = \relative c'' {
   r8 cis r8 b r8 cis4.
   r8 cis r8 b r8 cis4.
   r8 cis r8 b r8 cis4.
+  d8 d d d d d d d 
+  b8 b b b b b b a
  
  
 }
@@ -105,7 +141,9 @@ lower = \relative c {
   fis8 fis fis fis fis-> fis fis <d' a'>->
   d8 d d d d <d a'>8-> d <a e'>8->
   a8 a a a a <a e'>-> a  <gis e'>8-> 
-  gis8 gis gis gis gis <gis e'>8 gis <gis e'>8
+  gis8 gis gis gis gis <gis e'>8-> gis <gis e'>8->
+  <a d fis>1
+  <<{<a fis'>1} \\ {d8 d d d d d d d}>>
  
 }
 
@@ -115,7 +153,9 @@ songChords =   \chordmode {
      a1 e/gis1 g1 s2 s4 s8 
      fis8:m s2 s4 s8 d8 s2 s4 s8 
      fis8:m s2 s4 s8 d8 s2 s4 s8 
-     a8 s2 s4 s8 e/gis8 s2 s4 s8 
+     a8 s2 s4 s8 e/gis8 s2 s4 s4 
+     d1
+
    }
 
 \score {
