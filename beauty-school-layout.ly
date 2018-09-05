@@ -3,9 +3,9 @@ bookTitleMarkup = \markup {
  	\column {
 		\column { \line { \bold \fromproperty #'header:dedication } } 
 		\column { \null \fill-line {\bold \fontsize #9 \fromproperty #'header:title } }
+		\column { \null \line { \italic \fromproperty #'header:composer } }
+		}		
   }
-  \column {		\column { \null \line { \italic \fromproperty #'header:composer } }}
- }
 }
 \header {
 %tried in-line markup here
