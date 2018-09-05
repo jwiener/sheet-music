@@ -10,17 +10,20 @@ bookTitleMarkup = \markup {
                   } 
         }
     
-    \column { \null \fill-line {\bold \abs-fontsize #24 \fromproperty #'header:title } }
+    \column { 
+      \null 
+      \fill-line {
+          {\bold \abs-fontsize #16 \fromproperty #'header:poetDates }
+          {\bold \abs-fontsize #16 \fromproperty #'header:subsubtitle }
+          
+            }
+      \fill-line {\bold \abs-fontsize #24 \fromproperty #'header:title } 
+    }
     
     \column {
 
       \column {
     \null
-        \fill-line {
-          {\bold \abs-fontsize #16 \fromproperty #'header:poetDates }
-          {\bold \abs-fontsize #16 \fromproperty #'header:subsubtitle }
-          
-            }
         \fill-line {
                 { \italic \fromproperty #'header:poet } 
                 { \italic \fromproperty #'header:composer } 
