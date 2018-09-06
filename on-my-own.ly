@@ -209,6 +209,7 @@ lower = \relative c {
   <a d fis>1
   <<{<a fis'>1} \\ {d4 d d d8 <d, a' d>8->~ }>>
   <d, a' d>1 
+  <d a' d>2 <d a' d>8 <d a' d>4 <fis cis' fis>8 
 
  
 }
