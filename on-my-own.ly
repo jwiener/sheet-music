@@ -93,7 +93,8 @@ melody = \relative c'' {
   cis8 b4 r8 a4 b8 cis8~(\break
   cis4 e8 cis8~cis4 e8 cis8~
   cis8 e4 cis8~cis8) b4 a8
-  r2. fis'8 a \bar "||"
+  r1
+  r2. fis'8 a \bar "||" \break
   %chorus 1
 
 
@@ -158,7 +159,9 @@ upper = \relative c'' {
   r8 cis r8 b r8 cis4.
   r8 cis r8 b r8 cis4.
   r8 cis r8 b r8 cis4.
- 
+  d8 d d d d d d d 
+  d d d d d d d <fis, a d>8->~
+ <fis a d>1
  
 }
 
@@ -203,6 +206,9 @@ lower = \relative c {
   d8 d d d d <d a'>8-> d <a e'>8->
   a8 a a a a <a e'>-> a  <gis e'>8-> 
   gis8 gis gis gis gis <gis e'>8-> gis <gis e'>8->
+  <a d fis>1
+  <<{<a fis'>1} \\ {d4 d d d8 <d, a' d>8->~ }>>
+  <d, a' d>1 
 
  
 }
