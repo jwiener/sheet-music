@@ -99,7 +99,7 @@ melody = \relative c'' {
   a8 fis a fis a fis r8 a8~
   a8 fis fis e fis a4 cis8~
   cis1
-  r1
+  r2 r4 r8 a8 \break
 
 
  
@@ -167,8 +167,9 @@ upper = \relative c'' {
   d8 d d d d d d d 
   d d d d d d d <fis, a d>8->~
  <fis a d>1~
- <fis a d>2 <fis a d>8 <fis a d>4 <a cis fis>8
- 
+ <fis a d>2 <fis a d>8 <fis a d>4 <a cis fis>8 \laissezVibrer
+ << { a'4 a gis gis } \\ { <a, cis fis>1~ } >>
+ << { a'4 a gis gis } \\ { <a, cis fis>2~<a cis fis>4. } >>
 }
 
 lower = \relative c {
@@ -215,7 +216,11 @@ lower = \relative c {
   <a d fis>1
   <<{<a fis'>1} \\ {d4 d d d8 <d, a' d>8->~ }>>
   <d a' d>1 
-  <d a' d>2 <d a' d>8 <d a' d>4 <fis cis' fis>8 
+  <d a' d>2 <d a' d>8 <d a' d>4 <fis cis' fis>8 \laissezVibrer
+  fis8 fis fis' fis, fis fis fis' fis,
+  fis fis fis' fis, <fis cis' fis>8 <e b' e>4 <d a' d>8~
+  <d a' d>1 
+  <d a' d>2 <d a' d>8 <d a' d>4 <fis cis' fis>8 \laissezVibrer
 
  
 }
