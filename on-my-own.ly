@@ -94,9 +94,12 @@ melody = \relative c'' {
   cis4 e8 cis8~cis4 e8 cis8~
   cis8 e4 cis8~cis8) b4 a8
   r1
-  r2. fis'8 a \bar "||" \break
+  r2. fis'8 a~ \bar "||" \break
   %chorus 1
-
+  a8 fis a fis a fis r8 a8~
+  a8 fis fis e fis a4 cis8~
+  cis1
+  r1
 
 
  
@@ -111,6 +114,8 @@ text = \lyricmode {
   Dad -- die's real es -- tate am -- bi -- tions are com -- plete -- ly off the charts.
   Ev -- 'ry day they're sta -- ring at me like all hur -- ry up, get hap -- py, 
   move a -- long! __ __ __ Dead mom.
+  But Dad -- dy's in de -- ni -- al. 
+  Dad -- dy does -- n't wan -- na feel. 
 
 }
 
@@ -161,7 +166,8 @@ upper = \relative c'' {
   r8 cis r8 b r8 cis4.
   d8 d d d d d d d 
   d d d d d d d <fis, a d>8->~
- <fis a d>1
+ <fis a d>1~
+ <fis a d>2 <fis a d>8 <fis a d>4 <a cis fis>8
  
 }
 
@@ -208,7 +214,7 @@ lower = \relative c {
   gis8 gis gis gis gis <gis e'>8-> gis <gis e'>8->
   <a d fis>1
   <<{<a fis'>1} \\ {d4 d d d8 <d, a' d>8->~ }>>
-  <d, a' d>1 
+  <d a' d>1 
   <d a' d>2 <d a' d>8 <d a' d>4 <fis cis' fis>8 
 
  
